@@ -10,7 +10,7 @@ def computeCorrelation(X, Y):
     yBar = np.mean(Y)
     varX = 0  
     varY = 0
-    for i in range(6):
+    for i in range(len(X)):
         diffXXBar = X[i] - xBar  
         diffYYBar = Y[i] - yBar  
         varX = varX + diffXXBar**2
