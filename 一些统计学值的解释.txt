@@ -3,6 +3,10 @@
 可变性。取值在[0,1]之间 越大说明模型的拟合越好
 R平方（R-Square）的python实现代码 （原理是使用SSR/SST）
 
+'''
+    代码是实现R平方和的代码
+    其中使用的原理是SSR/SST
+'''
 import numpy as np
 
 def computeCorrelation(X, Y):
@@ -11,7 +15,7 @@ def computeCorrelation(X, Y):
     varX = 0  
     varY = 0
     print(len(X))
-    for i in range(6):
+    for i in range(len(X)):
         diffXXBar = X[i] - xBar  
         diffYYBar = Y[i] - yBar  
         varX = varX + diffXXBar**2
